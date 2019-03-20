@@ -1,0 +1,46 @@
+plugins:
+  source:
+    - module: intake_xarray
+    
+sources:
+  pr:
+    description: CMIP6 3-hourly precipitation for CNRM-CM6-1 historical scenario r1i1p1f2
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/CNRM-ESM2-1/historical/r1i1p1f2/pr/'
+
+  tas:
+    description: CMIP6 3-hourly near surface temperature for CNRM-CM6-1 historical scenario r1i1p1f2
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/CNRM-ESM2-1/historical/r1i1p1f2/tas/'
+
+  huss:
+    description: CMIP6 3-hourly near surface specific humidity for CNRM-CM6-1 historical scenario r1i1p1f2
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/CNRM-ESM2-1/historical/r1i1p1f2/huss/'

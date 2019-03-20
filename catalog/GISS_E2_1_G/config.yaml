@@ -1,0 +1,8 @@
+sources:
+  historical:
+    args:
+      path: 'GISS_E2_1_G/historical/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+    

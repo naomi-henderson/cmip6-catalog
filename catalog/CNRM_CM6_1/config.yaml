@@ -1,0 +1,8 @@
+sources:
+  historical:
+    args:
+      path: 'CNRM_CM6_1/historical/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+    

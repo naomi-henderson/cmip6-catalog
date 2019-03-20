@@ -1,0 +1,49 @@
+sources:
+  r1i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r1i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r2i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r2i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r3i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r3i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r4i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r4i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r5i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r5i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r6i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r6i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  r7i1p1f1:
+    args:
+      path: 'IPSL_CM6A_LR/historical/r7i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}

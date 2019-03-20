@@ -1,0 +1,18 @@
+plugins:
+  source:
+    - module: intake_xarray
+sources:
+
+  pr:
+    description: CMIP6 3-hourly precipitation for BCC-CSM2-MR historical scenario r1i1p1f1
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/BCC-CSM2-MR/historical/r1i1p1f1/pr/'

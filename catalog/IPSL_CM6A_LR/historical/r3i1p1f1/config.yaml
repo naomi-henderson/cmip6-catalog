@@ -1,0 +1,46 @@
+plugins:
+  source:
+    - module: intake_xarray
+    
+sources:
+  pr:
+    description: CMIP6 3-hourly precipitation for IPSL-CM6A-LR historical scenario r3i1p1f1
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/IPSL-CM6A-LR/historical/r3i1p1f1/pr/'
+
+  tas:
+    description: CMIP6 3-hourly near surface temperature for IPSL-CM6A-LR historical scenario r3i1p1f1
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/IPSL-CM6A-LR/historical/r3i1p1f1/tas/'
+
+  huss:
+    description: CMIP6 3-hourly near surface specific humidity for IPSL-CM6A-LR historical scenario r3i1p1f1
+    metadata:
+      tags:
+        - atmosphere
+        - model
+    driver: zarr
+    args:
+      storage_options:
+        token: anon
+        access: read_only
+      consolidated: True
+      urlpath: 'gcs://pangeo-data/CMIP6_3hr/IPSL-CM6A-LR/historical/r3i1p1f1/huss/'

@@ -1,0 +1,7 @@
+sources:
+  r1i1p1f1:
+    args:
+      path: 'BCC_CSM2_MR/historical/r1i1p1f1/config.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
