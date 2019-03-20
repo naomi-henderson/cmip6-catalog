@@ -1,4 +1,4 @@
-# cmip6-catalog
+# CMIP6 catalogs
 
 ### my intake catalog nesting ideas
 
