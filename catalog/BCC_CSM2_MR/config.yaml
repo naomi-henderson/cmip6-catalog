@@ -1,7 +1,7 @@
 sources:
   historical:
     args:
-      path: 'BCC_CSM2_MR/historical/config.yaml'
+      path: '{{ CATALOG_DIR }}/historical/config.yaml'
     description: ''
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}

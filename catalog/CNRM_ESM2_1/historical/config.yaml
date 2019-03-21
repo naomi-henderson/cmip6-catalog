@@ -1,7 +1,7 @@
 sources:
   r1i1p1f2:
     args:
-      path: 'CNRM_ESM2_1/historical/r1i1p1f2/config.yaml'
+      path: '{{ CATALOG_DIR }}/r1i1p1f2/config.yaml'
     description: ''
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
