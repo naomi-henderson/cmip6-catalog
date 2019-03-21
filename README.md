@@ -6,8 +6,8 @@
 
 - With this setup,  `cat = intake.open_catalog('config.yaml')` in any directory will open a parent catalog and `cat.<subdir>` will open a child catalog or the actual data.
 
-- This is all working in my example, but with two uncomfortable properties:
+- This is all working in my example, but with ~~two~~ one uncomfortable ~~properties~~ property (thanks, @martindurant):
 
   1. \<tab\> completion will work to get from the parent to child catalog (sub-directory), but then will not get to the grandchild catalog (sub-sub-directory)
   
-  2. The path in each YAML file is relative to the `<dir>` in the initial `intake.open_catalog('<dir>/config.yaml')`. This means that if I `intake.open_catalog(config.yaml)` in a subdirectory, the paths are going to need to be relative to this subdirectory, but I have had to hard-wire them to an arbitrary initial parent directory.
+  ~~2. The path in each YAML file is relative to the `<dir>` in the initial `intake.open_catalog('<dir>/config.yaml')`. This means that if I `intake.open_catalog(config.yaml)` in a subdirectory, the paths are going to need to be relative to this subdirectory, but I have had to hard-wire them to an arbitrary initial parent directory.
