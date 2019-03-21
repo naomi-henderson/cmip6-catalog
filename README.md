@@ -10,4 +10,4 @@
 
   1. \<tab\> completion will work to get from the parent to child catalog (sub-directory), but then will not get to the grandchild catalog (sub-sub-directory)
   
-  ~~2. The path in each YAML file is relative to the `<dir>` in the initial `intake.open_catalog('<dir>/config.yaml')`. This means that if I `intake.open_catalog(config.yaml)` in a subdirectory, the paths are going to need to be relative to this subdirectory, but I have had to hard-wire them to an arbitrary initial parent directory.
+  ~~2. The path in each YAML file is relative to the `<dir>` in the initial `intake.open_catalog('<dir>/config.yaml')`. This means that if I `intake.open_catalog(config.yaml)` in a subdirectory, the paths are going to need to be relative to this subdirectory, but I have had to hard-wire them to an arbitrary initial parent directory.~~
